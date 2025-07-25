@@ -1,0 +1,4 @@
+update the BeerController to use DTOs.  In the package `domain`, create a BeerDto with the same properties as the Beer Entity.  The DTO should use 
+lombok annotations including Builder.  Create a Mapstruct mapper to convert to and from the DTO.  Mappers should go into the `mappers` package.  When converting
+from a DTO to the JPA entity, ignore the properties id, createdDate and updateDate.  Update the service layer to accept DTO objects and to use the Mapstruct
+mapper for type conversions.  Update the controller methods to use the new DTO.  Update the test methods to use DTOs where appropriate.
